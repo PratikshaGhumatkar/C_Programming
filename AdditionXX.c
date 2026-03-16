@@ -1,12 +1,4 @@
 /*
-    Step 1 : Understand the problem statement
-    Step 2 : Write the algorithm
-    Step 3 : Decide the programming language
-    Step 4 : Write the program
-    Step 5 : Test the program
-*/
-
-/*
     Algorithm
 
     START
@@ -32,30 +24,32 @@
 //  Description :   It is used to perform addition         
 //  Input :         Float, Float 
 //  Output :        Float
-//  Author :        Pratiksha Rajesh Ghumatkar
-//  Date :          16/03/2026
+//  Author :        Piyush Manohar Khairnar
+//  Date :          09/10/2025
 //
 /////////////////////////////////////////////////////////////////
 
-float AdditionTwoNumbers(float fNo1, float fNo2)
+float AdditionTwoNumbers(
+                            float fNo1,             // First input
+                            float fNo2              // Second input
+                        )
 {
-    float fSum = 0.0f;
+    float fSum = 0.0f;                              // To store the result
 
-    // Updator
-    if(fNo1 < 0.0f)
+    if(fNo1 < 0.0f)                                 // Updator
     {
         fNo1 = -fNo1;
     }
 
-    if(fNo2 < 0.0f)
+    if(fNo2 < 0.0f)                                 // Updator
     {
         fNo2 = -fNo2;
     }
 
-    fSum = fNo1 + fNo2;    // Business Logic
+    fSum = fNo1 + fNo2;                             // Business Logic
     
     return fSum;
-}
+}   // End of AdditionTwoNumbers
 
 /////////////////////////////////////////////////////////////////
 //
@@ -65,7 +59,8 @@ float AdditionTwoNumbers(float fNo1, float fNo2)
 
 int main()
 {
-    float fValue1 = 0.0f, fValue2 = 0.0f, fRet = 0.0f;
+    float fValue1 = 0.0f, fValue2 = 0.0f;           // To accept user input
+    float fRet = 0.0f;                              // To store the result
 
     printf("Enter first number : \n");
     scanf("%f",&fValue1);
@@ -73,12 +68,12 @@ int main()
     printf("Enter second number : \n");
     scanf("%f",&fValue2);
     
-    fRet = AdditionTwoNumbers(fValue1,fValue2);
+    fRet = AdditionTwoNumbers(fValue1,fValue2);     // Method call
 
     printf("Addition is : %f\n",fRet);
 
     return 0;
-}
+}   // End of main
 
 /////////////////////////////////////////////////////////////////
 //
